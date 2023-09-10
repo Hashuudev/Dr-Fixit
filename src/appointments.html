@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/appointment.css" />
+    <link rel="stylesheet" href="./css//service.css" />
+    <!-- <link rel="stylesheet" href="./css//profile card.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body class="services-pg">
+    <nav class="navbar bg-blue">
+      <div class="container flex">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/Dr Fixit-01 (1) (1).png" alt="site logo" />
+        </a>
+        <button type="button" class="navbar-show-btn">
+          <img src="images/ham-menu-icon.png" />
+        </button>
+
+        <div class="navbar-collapse bg-white">
+          <button type="button" class="navbar-hide-btn">
+            <img src="images/close-icon.png" />
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./service.html" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="./medicine.html" class="nav-link">Medicine</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="search-bar">
+            <form>
+              <div class="search-bar-box flex">
+                <span class="search-icon flex">
+                  <img src="images/search-icon-dark.png" />
+                </span>
+                <input
+                  type="search"
+                  class="search-control"
+                  placeholder="Search here"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main-section">
+      <!-- <div class="section-one">
+            <p>
+            <h1>Where life fights its battles with unwavering determination."<br></h1>
+            <br>
+            <h3>Bridging the gap between illness and vitality.</h3>
+            </p>
+        </div>
+        <div class="section-two">
+            <img src="./images/111-removebg-preview.png" alt="Image">
+        </div> -->
+    </main>
+
+    <section class="boxes container-grid">
+      <div class="card">
+        <!-- <div class="card-header">
+              <h2>Doctor Details</h2>
+            </div>
+            <div class="card-content">
+              <div class="field">
+                <span class="field-name">Doctor Name: </span>
+                <span class="field-type">text</span>
+              </div>
+              <div class="field">
+                <span class="field-name">Phone: </span>
+                <span class="field-type">text</span>
+                
+              </div>
+              <div class="field">
+                <span class="field-name">Specialist: </span>
+                <span class="field-type">text</span>
+              </div>
+              <div class="field">
+                <span class="field-name">Location: </span>
+                <span class="field-type">text</span>
+              </div>
+              <div class="field">
+                <span class="field-name">Package: </span>
+                <span class="field-type">integer</span>
+              </div>
+              <div class="field">
+                <span class="field-name">Start Time: </span>
+                <span class="field-type">timestamp with time zone</span>
+              </div>
+              <div class="field">
+                <span class="field-name">End Time: </span>
+                <span class="field-type">timestamp with time zone</span>
+              </div>
+              <div class="field">
+                <span class="field-name">Holiday: </span>
+                <span class="field-type">text</span>
+              </div>
+            </div> -->
+      </div>
+
+      <form id="appointment-form">
+        <label for="patientsName">Your Name:</label>
+        <input type="text" id="patientsName" />
+        <p class="validation-text" id="val-name"></p>
+
+        <label for="patientAge">Age:</label>
+        <input type="number" id="patientAge" />
+        <p class="validation-text" id="val-age"></p>
+
+        <label for="patientPhone">Phone:</label>
+        <input type="tel" id="patientPhone" />
+        <p class="validation-text" id="val-phone"></p>
+
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="datetime-local" id="appointmentTime" />
+        <p class="validation-text" id="val-appointment"></p>
+
+        <label for="totalPatients">Total Patients:</label>
+        <input type="number" id="totalPatients" />
+        <p class="validation-text" id="val-patients"></p>
+
+        <button type="submit" class="pay-now">Pay Now</button>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer text-center">
+      <div class="container">
+        <div class="footer-inner text-white py grid">
+          <div class="footer-item">
+            <h3 class="footer-head">about us</h3>
+            <div class="icon">
+              <img src="images/logo.png" />
+            </div>
+            <p class="text text-md">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              saepe incidunt fugiat optio corporis ea!
+            </p>
+            <address>
+              Medic Clinic <br />
+              69 Deerpark Rd, Mount Merrion <br />
+              Co. Dublin, A94 E9D3 <br />
+              Ireland
+            </address>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">tags</h3>
+            <ul class="tags-list flex">
+              <li>medical care</li>
+              <li>emergency</li>
+              <li>therapy</li>
+              <li>surgery</li>
+              <li>medication</li>
+              <li>nurse</li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">Quick Links</h3>
+            <ul>
+              <li><a href="#" class="text-white">Our Services</a></li>
+              <li><a href="#" class="text-white">Our Plan</a></li>
+              <li><a href="#" class="text-white">Privacy Policy</a></li>
+              <li><a href="#" class="text-white">Appointment Schedule</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">make an appointment</h3>
+            <p class="text text-md">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, omnis.
+            </p>
+            <ul class="appointment-info">
+              <li>8:00 AM - 11:00 AM</li>
+              <li>2:00 PM - 05:00 PM</li>
+              <li>8:00 PM - 11:00 PM</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>revomedic@gmail.com</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+003 478 2834(00)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <ul class="flex">
+            <li>
+              <a href="#" class="text-white flex">
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-white flex">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-white flex">
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- custom js -->
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/appointment.js"></script>
+  </body>
+</html>

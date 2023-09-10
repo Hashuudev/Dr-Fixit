@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a payment</title>
+    <meta name="description" content="A demo of a payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <script type="module" src="https://js.stripe.com/v3/"></script>
+    <script type="module" src="./js/checkout.js" defer></script>
+  </head>
+  <body>
+    <!-- Display a payment form -->
+    <form id="payment-form">
+      <div id="link-authentication-element">
+        <!--Stripe.js injects the Link Authentication Element-->
+      </div>
+      <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+      </div>
+      <h3 id="calculating">Calculating amount...</h3>
+      <button id="submit" class="paymentBtn">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text"></span>
+      </button>
+      <p id="counterTag"></p>
+      <div id="payment-message"></div>
+    </form>
+  </body>
+</html>

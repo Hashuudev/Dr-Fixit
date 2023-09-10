@@ -1,0 +1,138 @@
+/* Basic styling for the form */
+#appointment-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+/* Style for form labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+/* @media screen and (max-width: 600px) {
+  #appointment-form {
+    max-width: 100%;
+    padding: 10px;
+  }
+} */
+
+.card {
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  background-color: #f0f0f0;
+  width: 350pxpx;
+  overflow: hidden;
+}
+
+.card-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.field-name {
+  font-weight: bold;
+  width: 45%;
+}
+
+.field-type {
+  color: #555;
+  width: 45%;
+}
+
+/* Style for the last field, no bottom border */
+.field:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for fields */
+.field:hover {
+  background-color: #eaeaea;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Basic styling for the form */
+#appointment-form {
+  /* Keep existing styling as needed */
+  margin: 0;
+}
+
+/* Grid container */
+.container-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 20px !important;
+  justify-items: center !important;
+  padding: 20px !important;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  #appointment-form {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.boxes {
+  align-items: stretch;
+}
+
+.validation-text {
+  margin-left: 3px;
+  color: red;
+  font-size: 12px;
+  /* display: none; */
+}
